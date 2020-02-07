@@ -3,6 +3,7 @@ body
 	font-family: "Comic Sans MS"; 
 	color: #ffffff;
 	background-color: #808080;
+	text-align: center;
 }
 
 a
@@ -21,6 +22,22 @@ a
 	display: flex;
     justify-content: space-between;
 	align-items: center;
+}
+
+.content
+{
+	width: 80vw;
+	margin: auto;
+	margin-top: 5vh;
+	text-align: left;
+}
+
+.title
+{
+	display: block;
+	margin: auto;
+	font-size: 2em;
+	margin-top: 5vh;
 }
 
 #titlebar span
@@ -75,9 +92,49 @@ a
 	color: #000000;
 }
 
-.content
+#love
 {
+	box-sizing: border-box;
 	width: 80vw;
-	margin: auto;
-	padding-top: 5vh;
+	border: 1vw solid;
+	padding: 5vmin;
+	padding-top: 1vmin;
+	border-image: url("grafika/heart_border.png") 33% round;
+	font-size: 1.2em;
+}
+
+#love a
+{
+	color: pink;
+}
+
+#love a:visited
+{
+	color: mediumvioletred;
+}
+
+#love a:hover
+{
+	color: fuchsia;
+}
+
+#modULO
+{
+	text-align: center;
+}
+
+#memes
+{
+	text-align: center;
+}
+
+#memes img
+{
+	width: 50vw;
+	margin-bottom: 2vh;
+}
+
+#Wolontariat
+{
+	
 }
