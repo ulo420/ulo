@@ -37,6 +37,20 @@ a
 	max-width: 50vw;
 }
 
+#titlebar span
+{
+	display: inline-block;
+	color: #6080EF;
+	font-weight: bold;
+}
+
+#titlebar img
+{
+	height: 20vmin;
+	width: auto;
+	min-height: 2.5cm;
+}
+
 .content
 {
 	width: 80vw;
@@ -52,20 +66,6 @@ a
 	margin: auto;
 	font-size: 2em;
 	margin-top: 5vh;
-}
-
-#titlebar span
-{
-	display: inline-block;
-	color: #6080EF;
-	font-weight: bold;
-}
-
-#titlebar img
-{
-	height: 20vmin;
-	width: auto;
-	min-height: 2.5cm;
 }
 
 #navigation
