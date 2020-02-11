@@ -22,7 +22,7 @@ a
     justify-content: space-between;
 	align-items: strech;
 	background: #FFFFFF;
-	min-height: 2.5cm;
+    min-height: 2.5cm;
 }
 
 #titlebar > div
@@ -33,14 +33,15 @@ a
 	justify-content: center;
 	align-items: center;
 	flex-grow: 1;
-	font-size: 2.5vw;
+	font-size: calc(0.1cm + 2.5vw);
 	max-width: 50vw;
+    min-width: 2.5cm;
 }
 
 #titlebar span
 {
 	display: inline-block;
-	color: #6080EF;
+	color: blue;
 	font-weight: bold;
 }
 
@@ -164,10 +165,9 @@ display: flex;
 background-color: #666666;
 justify-content: center;
 align-items: center;
-padding: 1vh 0;
+padding: 0.75vh 0;
 flex-wrap: wrap;
 align-content: space-between;
-row-gap: 1vh;
 }
 
 #navbar > a
@@ -176,7 +176,7 @@ display: inline-block;
 background-color: #E06000;
 text-align: center;
 padding: 0.5vmin 1vmin;
-margin: 0 1vmin;
+margin: 0.75vmin 1vmin;
 border-radius: 1vmin;
 text-decoration: none;
 color: white;
