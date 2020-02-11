@@ -1,11 +1,12 @@
 ﻿<html>
 <head>
-<meta charset="utf-8">
-<title>strona, najlepsza, bardzo, jak najbardziej jak kazał mi wpisać Igor</title>
-
-<link rel="stylesheet" type="text/css" href="style.css">
+<?php include('head.php'); ?>
 </head>
 <body>
+
+<?php include('titlebar.php'); ?>
+
+<?php include('navbar.php'); ?>
 
 <div id="titlebar">
 <a href="index.html"><img src="grafika/logo.png"></a>
@@ -20,10 +21,9 @@
 <a href="dziennik.html">dziennik</a>
 </div>
 
-<span class="title">ULOve - walentynki</span>
-<div id="love" class="content">
-<h2>Polecane lektury:</h2>
-<a href="https://wolnelektury.pl/media/book/pdf/psychologia-milosci.pdf">"Psychologia miłości" - Artur Schopenhauer</a>
+<span class="title">Tytuł</span>
+<div id="ifNeccesaryPutIdForContentContainerHere" class="content">
+Tutaj treść
 </div>
 
 
