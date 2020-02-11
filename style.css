@@ -19,15 +19,22 @@ a
 	text-align: center;
 	overflow: hidden;
 	display: flex;
-    	justify-content: space-between;
+    justify-content: space-between;
 	align-items: strech;
 	background: #FFFFFF;
+	min-height: 2.5cm;
 }
 
 #titlebar > div
 {
 	background-image: url("grafika/szkola.png");
 	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	font-size: 2.5vw;
+	max-width: 50vw;
 }
 
 .content
@@ -49,16 +56,16 @@ a
 
 #titlebar span
 {
-	font-size: 4vmin;
 	display: inline-block;
 	color: #6080EF;
-font-weight: bold;
+	font-weight: bold;
 }
 
 #titlebar img
 {
 	height: 20vmin;
 	width: auto;
+	min-height: 2.5cm;
 }
 
 #navigation
@@ -125,6 +132,11 @@ font-weight: bold;
 	color: fuchsia;
 }
 
+#love a:active
+{
+	color: black;
+}
+
 #modULO
 {
 	text-align: center;
@@ -149,15 +161,16 @@ font-weight: bold;
 #navbar
 {
 display: flex;
-list-style-type: none;
 background-color: #666666;
 justify-content: center;
 align-items: center;
-padding: 0.5vmin 0;
-border-radius: 1vmin;
+padding: 1vh 0;
+flex-wrap: wrap;
+align-content: space-between;
+row-gap: 1vh;
 }
 
-#navbar > li
+#navbar > a
 {
 display: inline-block;
 background-color: #E06000;
@@ -165,16 +178,82 @@ text-align: center;
 padding: 0.5vmin 1vmin;
 margin: 0 1vmin;
 border-radius: 1vmin;
+text-decoration: none;
+color: white;
 }
 
-#navbar > li:hover
+#navbar > a:hover
 {
 background-color: #D05000;
 cursor: pointer;
 }
 
-#navbar > li > a
+#navbar > #active
 {
-text-decoration: none;
-color: white;
+	background-color: #4075CC;
+}
+
+#navbar > #active:hover
+{
+	background-color: #3065BC;
+}
+
+#plan
+{
+	text-align: center;
+	overflow-x: auto;
+}
+
+#plan table
+{
+	margin: auto;
+	width: 80%;
+	height: 50vh;
+}
+
+#plan table, th, td
+{
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#plan table th, td
+{
+	padding: 0.5vmin;
+}
+
+#plan table th
+{
+	background-color: #FF7700;
+}
+
+#plan table tr td
+{
+	background-color: #FFAD66;
+}
+
+#plan table tr td:nth-child(1)
+{
+	background-color: #FF7700;
+}
+
+#rekrutacja a
+{
+	color: blue;
+}
+
+#rekrutacja a:visited
+{
+	color: pink;
+}
+
+#rekrutacja a:hover
+{
+	color: red;
+}
+
+#rekrutacja a:active
+{
+	color: black;
 }
