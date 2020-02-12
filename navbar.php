@@ -1,6 +1,6 @@
 <?php
 
-$filename=basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
+$filename=basename(get_included_files()[0]);
 
 $menuitems=array(
     'index.php' => 'główna',
