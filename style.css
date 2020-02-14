@@ -1,6 +1,17 @@
+@font-face {
+    font-family: "Comic Sans";
+    src: url("fonts/comic.ttf");
+}
+
+@font-face {
+    font-family: "Comic Sans";
+    src: url("fonts/comicbd.ttf");
+    font-weight: bold;
+}
+
 body
 {
-	font-family: "Comic Sans MS"; 
+	font-family: "Comic Sans MS", "Comic Sans";
 	color: #ffffff;
 	background-color: #808080;
 	text-align: center;
@@ -140,13 +151,63 @@ a
 
 #love li > img
 {
-    width: 10vw;
+    width: 5cm;
+    max-width: 50vw;
     height: auto;
 }
 
 #modULO
 {
 	text-align: center;
+    font-size: 4vh;
+}
+
+#modULO input
+{
+    width: 40%;
+    height: 6vh;
+    padding: 0.5vh;
+    border-radius: 2vmin;
+    background-color: orange;
+    color: cornflowerblue;
+    border: none;
+    border: 0.25vmin solid orange;
+    -webkit-appearance: none;
+    -moz-appearance:textfield;
+    font-size: 4vh;
+    text-align: center;
+}
+
+#modULO button
+{
+    width: 40%;
+    height: 5vh;
+    padding: 0;
+    border-radius: 2vmin;
+    background-color: blue;
+    border: none;
+    font-size: 4vh;
+    margin-top: 1vh;
+    color: yellow;
+}
+
+#modULO button:hover
+{
+    color: red;
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+#modULO button:active
+{
+    color: springgreen;
+    background-color: red;
+    cursor: pointer;
+}
+
+#modULO input:focus
+{
+    border: 0.25vmin solid blue;
 }
 
 #memes
@@ -204,10 +265,47 @@ cursor: pointer;
 	background-color: #3065BC;
 }
 
+#plancontainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#plancontainer > ul
+{
+    margin-right: 0.5cm;
+}
+
+#plancontainer > ul a
+{
+    color: lawngreen;
+}
+
+#plancontainer > ul a:hover
+{
+    color: pink;
+}
+
+#planplancontainer > ul a:active
+{
+    color: black;
+}
+
+#plancontainer > ul > #activeplan > a
+{
+    color: red;
+}
+
+#plancontainer > ul > #activeplan > a:hover
+{
+    color: deepskyblue;
+}
+
 #plan
 {
 	text-align: center;
 	overflow-x: auto;
+    flex-grow: 1;
 }
 
 #plan table
@@ -262,4 +360,9 @@ cursor: pointer;
 #rekrutacja a:active
 {
 	color: black;
+}
+
+#plancontainer
+{
+    
 }

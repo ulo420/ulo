@@ -4,6 +4,5 @@ function calculatemodULO(){
 	var b = document.getElementById("in2").value;
 
 	var c = a % b;
-
 	document.getElementById("wynikmodULO").innerHTML = c;
 }
