@@ -11,7 +11,7 @@
 <span class="title">Rekrutacja</span>
 <div id="rekrutacja" class="content">
 Pliki do pobrania:<br>
-<a href="">Formularz</a>
+<a href="dokumenty/kryteria.pdf">Kryteria</a>
 </div>
 
 
