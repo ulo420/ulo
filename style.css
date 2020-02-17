@@ -269,6 +269,7 @@ cursor: pointer;
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #plancontainer > ul
