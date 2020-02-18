@@ -226,6 +226,26 @@ a
 	
 }
 
+#Wolontariat a
+{
+	color: orange;
+}
+
+#Wolontariat a:visited
+{
+	color: blue;
+}
+
+#Wolontariat a:hover
+{
+	color: orangered;
+}
+
+#Wolontariat a:active
+{
+	color: red;
+}
+
 #navbar
 {
 display: flex;
@@ -268,7 +288,7 @@ cursor: pointer;
 #plancontainer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

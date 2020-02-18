@@ -17,7 +17,8 @@
 
             $plans=array(
 
-                'najlepsza klasa'=>'plany/1aL.csv'
+                'najlepsza klasa'=>'plany/1aL.csv',
+                'nie najlepsza klasa'=>'plany/1bL.csv'
 
             );
 
