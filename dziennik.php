@@ -9,8 +9,8 @@
 <?php include('navbar.php'); ?>
 
 <span class="title">Dziennik elektroniczny</span>
-<div id="ifNeccesaryPutIdForContentContainerHere" class="content">
-Tutaj treść
+<div id="dziennikcontainer" class="content">
+<a target="_blank" href="https://uonetplus.vulcan.net.pl/radom">Przejdź do dziennika</a>
 </div>
 
 

@@ -15,16 +15,18 @@ body
 	color: #ffffff;
 	background-color: #808080;
 	text-align: center;
+    margin: 0;
 }
 
 a
 {
 	text-decoration: none;
+    outline: none;
 }
 
 #titlebar
 {
-	width: 80vw;
+	width: 85vw;
 	height: 20vmin;
 	margin: auto;
 	text-align: center;
@@ -63,6 +65,51 @@ a
 	min-height: 2.5cm;
 }
 
+#navbar
+{
+    display: flex;
+    background-color: #666666;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75vh 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    border-radius: 0 0 2.5vw 2.5vw;
+    width: 85vw;
+}
+
+#navbar > a
+{
+    display: inline-block;
+    background-color: #E06000;
+    text-align: center;
+    padding: 0.5vmin 1vmin;
+    margin: 0.75vmin 1vmin;
+    border-radius: 1vmin;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar > a:hover
+{
+    background-color: #D05000;
+    cursor: pointer;
+}
+
+#navbar > #active
+{
+	background-color: #4075CC;
+}
+
+#navbar > #active:hover
+{
+	background-color: #3065BC;
+}
+
 .content
 {
 	width: 80vw;
@@ -76,8 +123,9 @@ a
 {
 	display: block;
 	margin: auto;
-	font-size: 2em;
+	font-size: 8vmin;
 	margin-top: 5vh;
+    max-width: 80vw;
 }
 
 #navigation
@@ -162,8 +210,20 @@ a
     font-size: 4vh;
 }
 
+#modulo #inputs
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#modulo #inputs span
+{
+    margin: 0 2vw;
+}
+
 #modULO input
 {
+    flex-grow: 1;
     width: 40%;
     height: 6vh;
     padding: 0.5vh;
@@ -180,8 +240,8 @@ a
 
 #modULO button
 {
-    width: 40%;
-    height: 5vh;
+    width: 80vw;
+    height: 6vh;
     padding: 0;
     border-radius: 2vmin;
     background-color: blue;
@@ -217,8 +277,10 @@ a
 
 #memes img
 {
-	width: 50vw;
+	width: 75vmin;
+    height: auto;
 	margin-bottom: 2vh;
+    min-width: 45vw;
 }
 
 #Wolontariat
@@ -246,44 +308,7 @@ a
 	color: red;
 }
 
-#navbar
-{
-display: flex;
-background-color: #666666;
-justify-content: center;
-align-items: center;
-padding: 0.75vh 0;
-flex-wrap: wrap;
-align-content: space-between;
-}
 
-#navbar > a
-{
-display: inline-block;
-background-color: #E06000;
-text-align: center;
-padding: 0.5vmin 1vmin;
-margin: 0.75vmin 1vmin;
-border-radius: 1vmin;
-text-decoration: none;
-color: white;
-}
-
-#navbar > a:hover
-{
-background-color: #D05000;
-cursor: pointer;
-}
-
-#navbar > #active
-{
-	background-color: #4075CC;
-}
-
-#navbar > #active:hover
-{
-	background-color: #3065BC;
-}
 
 #plancontainer
 {
@@ -386,4 +411,20 @@ cursor: pointer;
 #plancontainer
 {
     
+}
+
+#dziennikcontainer
+{
+    text-align: center;
+}
+
+#dziennikcontainer a
+{
+    color: orange;
+    font-size: 10vh;
+}
+
+#dziennikcontainer a:hover
+{
+    color: orangered;
 }

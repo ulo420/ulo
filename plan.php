@@ -15,30 +15,39 @@
         
         <?php 
 
+            $plansdir='plany/';
+            $plansextension='.csv';
+            
             $plans=array(
 
-                'najlepsza klasa'=>'plany/1aL.csv',
-                'nie najlepsza klasa'=>'plany/1bL.csv'
+                '1aL'=>'najlepsza klasa',
+                '1bL'=>'nie najlepsza klasa'
 
             );
 
+            
+            $planfiles=array_diff(scandir($plansdir), array('.', '..'));
+            
+            
+            $currentplan='1aL';
 
-
-            $path=$plans['najlepsza klasa'];
-
-            if(isset($_GET['klasa'])&&array_key_exists($_GET['klasa'], $plans))
+            if(isset($_GET['klasa'])&&in_array($_GET['klasa'].$plansextension, $planfiles))
             {
-                $path=$plans[$_GET['klasa']];
+                $currentplan=$_GET['klasa'];
             }
 
-            foreach($plans as $name=>$filepath)
+            foreach($planfiles as $file)
             {
+                $classfromfilename=basename($file, $plansextension);
                 echo '<li';
-                if($path==$filepath)
+                if($currentplan==$classfromfilename)
                 {
                     echo ' id="activeplan"';
                 }
-                echo '><a href="?klasa='.$name.'">'.$name.'</a></li>';
+                echo '><a href="?klasa='.$classfromfilename.'">';
+                if(array_key_exists($classfromfilename, $plans)) echo $plans[$classfromfilename];
+                else echo $classfromfilename;
+                echo'</a></li>';
             }
 
             ?>
@@ -54,7 +63,7 @@
                 
                 ini_set("auto_detect_line_endings", true);
                 
-                if($handle=fopen($path, "r"))
+                if($handle=fopen($plansdir.$currentplan.$plansextension, "r"))
                 {
                     $row=fgetcsv($handle, 100, ";");
                     foreach($row as $cell)

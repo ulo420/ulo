@@ -13,10 +13,12 @@
 
 <div id="modULO" class="content">
 
+<div id="inputs">
+    <input id="in1" type="number" value="1">
+    <span>mod</span>
+    <input id="in2" type="number" value="1">
+</div>
 
-<input id="in1" type="number" value="1">
-mod
-<input id="in2" type="number" value="1"><br>
 <button onclick="calculatemodULO()">Oblicz modULO</button>
 <p id="wynikmodULO">wynik wykrystULOzuje się tutaj</p>
 
