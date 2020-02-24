@@ -65,9 +65,11 @@
                 
                 if($handle=fopen($plansdir.$currentplan.$plansextension, "r"))
                 {
+                    $highlightindex=0;
                     $row=fgetcsv($handle, 100, ";");
-                    foreach($row as $cell)
+                    foreach($row as $index => $cell)
                     {
+                        if($cell=='Nr') $highlightindex=$index;
                         echo '<th>'.$cell.'</th>';
                     }
                     
@@ -75,9 +77,11 @@
                     {
                         echo '<tr>';
                         
-                        foreach($row as $cell)
+                        foreach($row as $index => $cell)
                         {
-                            echo '<td>'.$cell.'</td>';
+                            echo '<td';
+                            if($index==$highlightindex) echo ' class="index" ';
+                            echo '>'.$cell.'</td>';
                         }
                         
                         echo '</tr>';

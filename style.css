@@ -224,7 +224,7 @@ a
 #modULO input
 {
     flex-grow: 1;
-    width: 40%;
+    width: 20%;
     height: 6vh;
     padding: 0.5vh;
     border-radius: 2vmin;
@@ -383,7 +383,7 @@ a
 	background-color: #FFAD66;
 }
 
-#plan table tr td:nth-child(1)
+#plan table tr td.index
 {
 	background-color: #FF7700;
 }
